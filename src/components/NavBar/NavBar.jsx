@@ -17,6 +17,9 @@ const NavBar = () => {
         </NavLink>
       </div>
       <div className={`nav-right ${isMenuOpen ? "active" : ""}`}>
+        <NavLink to="/" className="nav-link">
+          Home
+        </NavLink>
         <NavLink to="/about" className="nav-link">
           About
         </NavLink>
@@ -24,7 +27,10 @@ const NavBar = () => {
           Support
         </NavLink>
       </div>
-      <div className="hamburger-menu" onClick={toggleMenu}>
+      <div
+        className={`hamburger-menu ${isMenuOpen ? "open" : ""}`}
+        onClick={toggleMenu}
+      >
         <div className={`bar ${isMenuOpen ? "open" : ""}`}></div>
         <div className={`bar ${isMenuOpen ? "open" : ""}`}></div>
         <div className={`bar ${isMenuOpen ? "open" : ""}`}></div>

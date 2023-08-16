@@ -10,6 +10,7 @@ import Home from "./Pages/Home/Home";
 
 //styles
 import "./styles/index.scss";
+import About from "./Pages/About/About";
 
 const queryClient = new QueryClient();
 
@@ -21,6 +22,7 @@ const App = () => {
           <NavBar />
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
           </Routes>
         </Router>
       </QueryClientProvider>
