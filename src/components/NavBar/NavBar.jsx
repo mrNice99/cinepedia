@@ -9,6 +9,10 @@ const NavBar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <nav className="nav-bar">
       <div className="nav-left">
@@ -17,13 +21,13 @@ const NavBar = () => {
         </NavLink>
       </div>
       <div className={`nav-right ${isMenuOpen ? "active" : ""}`}>
-        <NavLink to="/" className="nav-link">
+        <NavLink to="/" className="nav-link" onClick={closeMenu}>
           Home
         </NavLink>
-        <NavLink to="/about" className="nav-link">
+        <NavLink to="/about" className="nav-link" onClick={closeMenu}>
           About
         </NavLink>
-        <NavLink to="/support" className="nav-link">
+        <NavLink to="/support" className="nav-link" onClick={closeMenu}>
           Support
         </NavLink>
       </div>
