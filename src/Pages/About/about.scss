@@ -19,7 +19,7 @@ header {
     color: $darkGray;
     font-size: 1.2rem;
     line-height: 1.5;
-    font-weight: 300;
+    font-weight: 600;
   }
 }
 
@@ -39,20 +39,23 @@ main {
     }
 
     p {
-      font-size: 1.2rem;
+      font-size: 1rem;
       margin-bottom: 15px;
       color: $darkGray;
-      font-weight: 300;
+      font-weight: 600;
     }
 
     span {
+      font-size: 1rem;
+      font-weight: 600;
       color: $Dark;
       font-weight: bold;
     }
 
     a {
       text-decoration: none;
-      color: $darkGray;
+      color: $Dark;
+      font-weight: 600;
 
       &:hover {
         text-decoration: underline;

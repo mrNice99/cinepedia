@@ -17,7 +17,7 @@ const NavBar = () => {
     <nav className="nav-bar">
       <div className="nav-left">
         <NavLink to="/" className="nav-link cinepedia">
-          Cinepedia
+          <p> Cinepedia</p>
         </NavLink>
       </div>
       <div className={`nav-right ${isMenuOpen ? "active" : ""}`}>
