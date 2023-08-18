@@ -1,5 +1,5 @@
+import React from "react";
 import "../About/about.scss";
-import Footer from "../../components/Footer/Footer";
 
 const About = () => {
   return (
@@ -55,7 +55,6 @@ const About = () => {
           </p>
         </section>
       </main>
-      <Footer />
     </>
   );
 };

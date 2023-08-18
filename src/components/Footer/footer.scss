@@ -1,6 +1,9 @@
 @import "/src/styles/index.scss";
 
 .footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
   background-color: $DarkBlue;
   color: $white;
   padding: 0.8rem;
@@ -61,6 +64,7 @@
       width: 20%;
       display: flex;
       justify-content: center;
+      align-items: center;
       margin: 0.3rem auto;
       color: $white;
       text-decoration: none;
@@ -83,6 +87,11 @@
       justify-content: center;
     }
   }
+
+  .footer-links {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 @media (max-width: 480px) {
@@ -96,5 +105,9 @@
     p {
       font-size: 1rem;
     }
+  }
+  .footer-links {
+    display: flex;
+    flex-direction: row;
   }
 }

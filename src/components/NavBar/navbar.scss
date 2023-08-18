@@ -1,6 +1,7 @@
 @import "../../styles/index.scss";
 
 .nav-bar {
+  z-index: 5;
   position: fixed;
   top: 0;
   width: 100%;
