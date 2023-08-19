@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../Support/support.scss";
 
 const Support = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <div className="cinepedia-support-container">
       <section>

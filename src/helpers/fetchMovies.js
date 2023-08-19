@@ -7,6 +7,7 @@ export const fetchMovies = async () => {
   try {
     const response = await axios.get(apiEndpoint);
     const data = response.data;
+    console.log(data.results);
     return data.results;
   } catch (error) {
     throw error;

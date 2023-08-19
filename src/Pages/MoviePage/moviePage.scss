@@ -1,0 +1,229 @@
+@import "../../styles/index.scss";
+
+.movie-page {
+  .back-button {
+    background-color: $LightBlue;
+    color: $white;
+    padding: 0.5rem 1.2rem;
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: $Red;
+    }
+
+    svg {
+      width: 1.8rem;
+      height: 1.8rem;
+    }
+  }
+
+  padding: 2rem;
+  background-color: $Dark;
+  color: $white;
+
+  .movie-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .movie-title {
+      font-size: 2rem;
+      font-weight: 600;
+      color: $LightBlue;
+      margin-bottom: 0.7rem;
+    }
+
+    .movie-release-date {
+      font-size: 1rem;
+      font-weight: 600;
+      color: $lightGray;
+    }
+  }
+
+  .movie-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.7rem;
+
+    .movie-poster {
+      max-width: 300px;
+      width: 100%;
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    .movie-summary {
+      flex: 1;
+      h2 {
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: $LightBlue;
+        margin-bottom: 0.7rem;
+      }
+      .movie-overview {
+        font-size: 1.2rem;
+        font-weight: 300;
+        color: $lightGray;
+      }
+    }
+  }
+
+  .movie-metadata {
+    min-width: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.3rem;
+    gap: 1rem;
+
+    .metadata-item {
+      flex: 1;
+      padding: 0.7rem;
+      background-color: $DarkBlue;
+      border-radius: 5rem;
+      text-align: center;
+
+      h3 {
+        font-size: 1.3rem;
+        font-weight: 800;
+        color: $LightBlue;
+        margin-bottom: 0.7rem;
+      }
+
+      p {
+        font-size: 1rem;
+        font-weight: 600;
+        color: $lightGray;
+        margin-bottom: 8px;
+
+        .metadata-label {
+          font-size: 1rem;
+          font-weight: 800;
+          color: $LightBlue;
+        }
+      }
+
+      ul {
+        list-style: none;
+        padding-left: 0;
+        margin-top: 8px;
+
+        li {
+          font-size: 1rem;
+          font-weight: 600;
+          margin: 0.5rem 0;
+          color: $lightGray;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .back-button {
+    padding: 0.4rem 1rem;
+    font-size: 0.875rem;
+  }
+
+  .movie-header {
+    .movie-title {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .movie-release-date {
+      font-size: 0.875rem;
+    }
+  }
+
+  .movie-details {
+    .movie-summary {
+      h2 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .movie-overview {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .movie-metadata {
+    .metadata-item {
+      h3 {
+        font-size: 1.125rem;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        font-size: 0.875rem;
+        margin-bottom: 0.5rem;
+      }
+
+      ul {
+        li {
+          font-size: 0.875rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .back-button {
+    padding: 0.4rem 0.9rem;
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .movie-header {
+    .movie-title {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .movie-release-date {
+      font-size: 0.75rem;
+    }
+  }
+
+  .movie-details {
+    .movie-summary {
+      h2 {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .movie-overview {
+        font-size: 0.875rem;
+      }
+    }
+  }
+
+  .movie-metadata {
+    .metadata-item {
+      h3 {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        font-size: 0.75rem;
+        margin-bottom: 0.5rem;
+      }
+
+      ul {
+        li {
+          font-size: 0.75rem;
+        }
+      }
+    }
+  }
+}

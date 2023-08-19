@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useQuery } from "@tanstack/react-query";
+import { Link } from "react-router-dom";
 import { fetchMovies } from "../../helpers/fetchMovies";
 import Card from "../../components/Card/Card";
 import "../Home/home.scss";
@@ -9,6 +10,10 @@ const Home = () => {
     queryKey: ["allMovies"],
     queryFn: fetchMovies,
   });
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [data]);
 
   if (isLoading) {
     return <div>Loading...</div>;
@@ -23,7 +28,10 @@ const Home = () => {
       <h1>Welcome to Cinepedia</h1>
       <div className="movie-list">
         {data.map((movie) => (
-          <Card key={movie.id} movie={movie} />
+          <Link key={movie.id} to={`/movie/${movie.id}`}>
+            {" "}
+            <Card movie={movie} />
+          </Link>
         ))}
       </div>
     </div>

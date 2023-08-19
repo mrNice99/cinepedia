@@ -8,6 +8,7 @@ import Footer from "./components/Footer/Footer";
 
 //pages
 import Home from "./Pages/Home/Home";
+import MoviePage from "./Pages/MoviePage/MoviePage";
 import About from "./Pages/About/About";
 import Support from "./Pages/Support/Support";
 
@@ -24,6 +25,7 @@ const App = () => {
           <NavBar />
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/movie/:movieId" element={<MoviePage />} />
             <Route path="/about" element={<About />} />
             <Route path="/support" element={<Support />} />
           </Routes>
