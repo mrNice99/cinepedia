@@ -1,0 +1,52 @@
+@import "../../styles/index.scss";
+
+.search-container {
+  display: flex;
+  align-items: center;
+  width: 250px;
+  height: 50px;
+  padding: 1rem;
+  border: 2px solid $LightBlue;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: transparent;
+}
+
+.search-icon {
+  margin-right: 10px;
+}
+
+.search {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: $white;
+  color: $LightBlue;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: left;
+  width: 100%;
+
+  &::placeholder {
+    color: $LightBlue;
+    font-size: 1.4rem;
+    font-weight: 300;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .search-container {
+    width: 100%;
+  }
+
+  .search {
+    font-size: 1rem;
+  }
+
+  .search::placeholder {
+    font-size: 0.7rem;
+    font-weight: 300;
+  }
+}
