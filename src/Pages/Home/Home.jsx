@@ -1,10 +1,14 @@
+//other
 import React, { useEffect, useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { Link } from "react-router-dom";
+//helper
 import { fetchMovies } from "../../helpers/fetchMovies";
+//components
 import Search from "../../components/Search/Search";
 import Card from "../../components/Card/Card";
 import Loader from "../../components/Loader/Loader";
+//style
 import "../Home/home.scss";
 
 const Home = () => {
