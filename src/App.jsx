@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
 
 //components
-import NavBar from "./components/navBar/navBar";
+import NavBar from "./components/NavBar/NavBar";
 import Footer from "./components/Footer/Footer";
 
 //pages
