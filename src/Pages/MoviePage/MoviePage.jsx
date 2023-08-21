@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 import "./MoviePage.scss";
+import Loader from "../../components/Loader/Loader";
 
 const apiKey = "b225eac962521eb30923e3ca6aece892";
 const apiEndpoint = `https://api.themoviedb.org/3/movie/`;
@@ -22,7 +23,7 @@ const MoviePage = () => {
   }, [data]);
 
   if (isLoading) {
-    return <div>Loading...</div>;
+    return <Loader />;
   }
 
   if (error) {
@@ -65,7 +66,6 @@ const MoviePage = () => {
       </button>
       <div className="movie-header">
         <h1 className="movie-title">{movie.title}</h1>
-        <p className="movie-release-date">Release Date: {movie.release_date}</p>
       </div>
       <div className="movie-details">
         <div className="movie-poster">
@@ -73,6 +73,9 @@ const MoviePage = () => {
             src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
             alt={movie.title}
           />
+          <p className="movie-release-date">
+            Release Date: {movie.release_date}
+          </p>
         </div>
         <div className="movie-summary">
           <h2>Overview</h2>

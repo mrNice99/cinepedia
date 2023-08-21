@@ -37,12 +37,6 @@
       color: $LightBlue;
       margin-bottom: 0.7rem;
     }
-
-    .movie-release-date {
-      font-size: 1rem;
-      font-weight: 600;
-      color: $lightGray;
-    }
   }
 
   .movie-details {
@@ -56,6 +50,12 @@
       img {
         max-width: 100%;
         height: auto;
+      }
+      .movie-release-date {
+        font-size: 1rem;
+        font-weight: 600;
+        color: $lightGray;
+        margin: 0.7rem 2.5rem;
       }
     }
 

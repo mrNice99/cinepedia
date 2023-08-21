@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { fetchMovies } from "../../helpers/fetchMovies";
 import Search from "../../components/Search/Search";
 import Card from "../../components/Card/Card";
+import Loader from "../../components/Loader/Loader";
 import "../Home/home.scss";
 
 const Home = () => {
@@ -19,7 +20,7 @@ const Home = () => {
   }, [data]);
 
   if (isLoading) {
-    return <div>Loading...</div>;
+    return <Loader />;
   }
 
   if (error) {
