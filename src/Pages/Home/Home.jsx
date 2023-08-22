@@ -37,12 +37,12 @@ const Home = () => {
 
   return (
     <div className="home">
-      <header className="header">
+      <header className="header" id="mainHeader">
         <h1>Welcome to Cinepedia</h1>
         <Search search={search} setSearch={setSearch} />
       </header>
 
-      <div className="movie-list">
+      <div className="movie-list" id="movieList">
         {filteredMovies.map((movie) => (
           <Link key={movie.id} to={`/movie/${movie.id}`}>
             {" "}

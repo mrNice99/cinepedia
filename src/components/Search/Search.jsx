@@ -24,6 +24,7 @@ const Search = ({ search, setSearch }) => {
       <input
         className="search"
         type="text"
+        id="searchInput"
         placeholder="Title Search..."
         value={search}
         onChange={(e) => setSearch(e.target.value)}
