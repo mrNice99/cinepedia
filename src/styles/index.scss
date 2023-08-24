@@ -6,10 +6,6 @@
   padding: 0;
 }
 
-html {
-  font-family: "Noto Sans", sans-serif;
-}
-
 $DarkBlue: #0d253f;
 $LightBlue: #01b4e4;
 $LightGreen: #90cea1;
@@ -18,6 +14,12 @@ $darkGray: #464646;
 $white: #fff;
 $Dark: #1a1a1a;
 $Red: #ff0000;
+$Purple: #600080;
+
+html {
+  font-family: "Noto Sans", sans-serif;
+}
+
 body {
   background-color: $Dark;
 }

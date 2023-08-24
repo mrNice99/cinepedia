@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { fetchMovies } from "../../helpers/fetchMovies";
 //components
 import Search from "../../components/Search/Search";
-import Card from "../../components/Card/card";
+import Card from "../../components/Card/Card";
 import Loader from "../../components/Loader/Loader";
 //style
 import "../Home/home.scss";
