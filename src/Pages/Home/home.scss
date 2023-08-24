@@ -51,6 +51,11 @@ body {
       align-items: center;
     }
 
+    .header {
+      flex-direction: column;
+      align-items: center;
+    }
+
     h1 {
       font-size: 2rem;
       margin-bottom: 1.2rem;
@@ -100,6 +105,11 @@ body {
 
   .home {
     padding: 0.5rem;
+
+    .header {
+      flex-direction: column;
+      align-items: center;
+    }
 
     h1 {
       font-size: 1.8rem;
