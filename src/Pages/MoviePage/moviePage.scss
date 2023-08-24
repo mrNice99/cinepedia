@@ -90,7 +90,7 @@
       text-align: center;
 
       h3 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         font-weight: 800;
         color: $LightBlue;
         margin-bottom: 0.7rem;
@@ -196,6 +196,8 @@
 
   .movie-details {
     .movie-summary {
+      text-align: center;
+
       h2 {
         font-size: 1.25rem;
         margin-bottom: 0.5rem;
@@ -210,13 +212,14 @@
   .movie-metadata {
     .metadata-item {
       h3 {
-        font-size: 1rem;
         margin-bottom: 0.5rem;
+        overflow: hidden;
       }
 
       p {
         font-size: 0.75rem;
         margin-bottom: 0.5rem;
+        overflow: hidden;
       }
 
       ul {

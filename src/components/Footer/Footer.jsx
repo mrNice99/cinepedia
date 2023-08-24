@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-social">
         <p>Stay connected with Cinepedia through our social media channels:</p>
-        <div className="links-footer">
+        <div className="footer-svg">
           <a
             href="https://www.facebook.com"
             target="_blank"

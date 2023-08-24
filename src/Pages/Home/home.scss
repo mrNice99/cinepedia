@@ -47,6 +47,11 @@ body {
   .home {
     padding: 1rem;
 
+    .header {
+      flex-direction: column;
+      align-items: center;
+    }
+
     h1 {
       font-size: 2rem;
       margin-bottom: 1rem;

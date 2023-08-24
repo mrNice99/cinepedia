@@ -30,6 +30,12 @@
     }
   }
 
+  @media screen and (max-width: 768px) {
+    h2 {
+      opacity: 1;
+    }
+  }
+
   &:hover {
     transform: scale(1.05);
 
