@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
-import "./MoviePage.scss";
 import Loader from "../../components/Loader/Loader";
+import "../MoviePage/moviePage.scss";
 
 const apiKey = "b225eac962521eb30923e3ca6aece892";
 const apiEndpoint = `https://api.themoviedb.org/3/movie/`;
