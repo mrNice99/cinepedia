@@ -3,7 +3,7 @@ import "./card.scss";
 
 const Card = ({ movie }) => {
   const { title, poster_path } = movie;
-  const movieCoverLink = `http://image.tmdb.org/t/p/w500`;
+  const movieCoverLink = `https://image.tmdb.org/t/p/w500`;
 
   return (
     <div className="card-movie">
