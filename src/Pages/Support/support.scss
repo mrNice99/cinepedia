@@ -23,8 +23,11 @@
       margin-bottom: 1.5rem;
 
       a {
-        color: $LightGreen;
         text-decoration: none;
+        margin-left: 0.3rem;
+        font-size: 1.2rem;
+        font-weight: 300;
+        color: $LightGreen;
 
         &:hover {
           text-decoration: underline;

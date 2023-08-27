@@ -53,8 +53,8 @@ const About = () => {
           <h2>Contact Us</h2>
           <p>
             Have a question, suggestion, or just want to say hi? Feel free to
-            reach out to us at{" "}
-            <a href="mailto:contact@cinepedia.com">contact@cinepedia.com.</a>{" "}
+            reach out to us at
+            <a href="mailto:contact@cinepedia.com">contact@cinepedia.com.</a>
             Your feedback is invaluable in helping us improve and grow.
           </p>
         </section>

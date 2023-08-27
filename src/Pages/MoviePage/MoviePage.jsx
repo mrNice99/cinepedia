@@ -1,8 +1,11 @@
+//other
 import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
+//component
 import Loader from "../../components/Loader/Loader";
+//style
 import "../MoviePage/moviePage.scss";
 
 const apiKey = "b225eac962521eb30923e3ca6aece892";

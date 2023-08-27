@@ -17,7 +17,7 @@ const Support = () => {
         </p>
         <p>
           Feel free to reach out to us with any inquiries or assistance you need
-          by sending an email to{" "}
+          by sending an email to
           <a href="mailto:support@cinepedia.com">support@cinepedia.com</a>. Our
           team will respond promptly to provide the information you're looking
           for.

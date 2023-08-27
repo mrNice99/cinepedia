@@ -45,7 +45,6 @@ const Home = () => {
       <div className="movie-list" id="movieList">
         {filteredMovies.map((movie) => (
           <Link key={movie.id} to={`/movie/${movie.id}`}>
-            {" "}
             <Card movie={movie} />
           </Link>
         ))}

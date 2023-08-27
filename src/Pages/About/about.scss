@@ -50,6 +50,9 @@ main {
     a {
       text-decoration: none;
       color: $LightGreen;
+      font-size: 1.2rem;
+      font-weight: 300;
+      margin-left: 0.3rem;
 
       &:hover {
         text-decoration: underline;
