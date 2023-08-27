@@ -80,13 +80,14 @@
     display: flex;
     justify-content: space-between;
     margin-top: 1.3rem;
+    justify-content: center;
     gap: 1rem;
 
     .metadata-item {
       flex: 1;
       padding: 0.7rem;
       background-color: $DarkBlue;
-      border-radius: 5rem;
+      border-radius: 2rem;
       text-align: center;
 
       h3 {
@@ -98,8 +99,8 @@
 
       p {
         font-size: 1rem;
-        font-weight: 600;
-        color: $lightGray;
+        font-weight: 800;
+        color: $LightGreen;
         margin-bottom: 8px;
 
         .metadata-label {
@@ -116,9 +117,9 @@
 
         li {
           font-size: 1rem;
-          font-weight: 600;
+          font-weight: 800;
           margin: 0.5rem 0;
-          color: $lightGray;
+          color: $LightGreen;
         }
       }
     }
@@ -216,6 +217,7 @@
   }
 
   .movie-metadata {
+    padding: 0.75rem;
     .metadata-item {
       margin: 0.75rem;
       h3 {
