@@ -24,6 +24,8 @@ main {
   padding: 2rem;
 
   section {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 3rem;
 
     h2 {
@@ -76,6 +78,8 @@ main {
 
   @media screen and (max-width: 480px) {
     section {
+      text-align: center;
+
       h2 {
         font-size: 1.6rem;
       }

@@ -89,19 +89,19 @@ const MoviePage = () => {
         <div className="metadata-item">
           <h3>Movie Info</h3>
           <p>
-            <span className="metadata-label">Original Language:</span>{" "}
+            <span className="metadata-label">Original Language:</span>
             {movie.original_language}
           </p>
           <p>
-            <span className="metadata-label">Popularity:</span>{" "}
+            <span className="metadata-label">Popularity:</span>
             {movie.popularity}
           </p>
           <p>
-            <span className="metadata-label">Vote Average:</span>{" "}
+            <span className="metadata-label">Vote Average:</span>
             {movie.vote_average}
           </p>
           <p>
-            <span className="metadata-label">Vote Count:</span>{" "}
+            <span className="metadata-label">Vote Count:</span>
             {movie.vote_count}
           </p>
         </div>
