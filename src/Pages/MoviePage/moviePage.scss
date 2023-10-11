@@ -72,6 +72,18 @@
         font-weight: 300;
         color: $lightGray;
       }
+      .movie-trailer {
+        text-align: center;
+        margin-top: 2rem;
+        height: 100%;
+
+        iframe {
+          width: 60%;
+          max-width: 100%;
+          display: block;
+          margin: 0 auto;
+        }
+      }
     }
   }
 

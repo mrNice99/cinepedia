@@ -1,9 +1,10 @@
+import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
-import React, { useState } from "react";
 import "./navbar.scss";
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -13,14 +14,35 @@ const NavBar = () => {
     setIsMenuOpen(false);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+      const visible = prevScrollPos > currentScrollPos;
+
+      setPrevScrollPos(currentScrollPos);
+
+      if (visible) {
+        document.querySelector(".nav-bar").classList.remove("hidden");
+      } else {
+        document.querySelector(".nav-bar").classList.add("hidden");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [prevScrollPos]);
+
   return (
-    <nav className="nav-bar">
+    <nav className={`nav-bar ${isMenuOpen ? "active" : ""}`}>
       <div className="nav-left">
         <NavLink to="/" className="nav-link cinepedia">
           <p> Cinepedia</p>
         </NavLink>
       </div>
-      <div className={`nav-right ${isMenuOpen ? "active" : ""}`}>
+      <div className="nav-right">
         <NavLink to="/" className="nav-link" onClick={closeMenu}>
           Home
         </NavLink>
