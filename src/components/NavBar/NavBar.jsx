@@ -42,7 +42,7 @@ const NavBar = () => {
           <p> Cinepedia</p>
         </NavLink>
       </div>
-      <div className="nav-right">
+      <div className={`nav-right ${isMenuOpen ? "active" : ""}`}>
         <NavLink to="/" className="nav-link" onClick={closeMenu}>
           Home
         </NavLink>
